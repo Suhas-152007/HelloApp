@@ -2,15 +2,11 @@ public class HelloApp {
     public static void main(String[] args) {
 
         if (args.length == 0) {
-            System.out.println("Hello, Suhas , bharath");
+            System.out.println("Hello, Suhas , Bharath ");
         } else {
-            String result = "";
-            for (String name : args) {
-                result += name + ", ";
-            }
-            result = result.substring(0, result.length() - 2);
+            String names = String.join(", ", args);
 
-            System.out.println("Hello, " + result + "!");
+            System.out.println("Hello, " + names + "!");
         }
     }
 }
